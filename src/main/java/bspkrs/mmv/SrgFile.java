@@ -45,6 +45,8 @@ public class SrgFile
         return parts[parts.length - 1];
     }
 
+    SrgFile() {}
+
     public SrgFile(File f, ExcFile excFile, StaticMethodsFile staticMethods) throws IOException
     {
         Scanner in = new Scanner(new BufferedReader(new FileReader(f)));
